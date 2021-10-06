@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z89-VN-5SB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recipes-->
+        <scene sceneID="C7S-mh-blo">
+            <objects>
+                <tableViewController id="xZp-iJ-cha" customClass="DishesViewController" customModule="HomeWork5_L6_Cooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="YfB-Ke-sSP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegViewCell" rowHeight="109" id="X4v-rv-Awe" customClass="TableViewCell" customModule="HomeWork5_L6_Cooking" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="109"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X4v-rv-Awe" id="IPQ-PR-Iwb">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yIe-5v-Yzy">
+                                            <rect key="frame" x="12" y="4.5" width="120" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="5UH-9A-ldJ"/>
+                                                <constraint firstAttribute="width" constant="120" id="E9l-sW-n85"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIC-JK-3RH">
+                                            <rect key="frame" x="144" y="12" width="39.5" height="47"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="47" id="azp-eM-UVw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPK-Qs-YzT">
+                                            <rect key="frame" x="144" y="40" width="37.5" height="67"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yIe-5v-Yzy" firstAttribute="leading" secondItem="IPQ-PR-Iwb" secondAttribute="leading" constant="12" id="18I-is-HUP"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RIC-JK-3RH" secondAttribute="trailing" constant="20" symbolic="YES" id="2hy-h5-Pzq"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KPK-Qs-YzT" secondAttribute="trailing" constant="20" symbolic="YES" id="7Of-fk-qv6"/>
+                                        <constraint firstAttribute="bottom" secondItem="KPK-Qs-YzT" secondAttribute="bottom" constant="2" id="Dod-Tx-QYm"/>
+                                        <constraint firstItem="KPK-Qs-YzT" firstAttribute="leading" secondItem="RIC-JK-3RH" secondAttribute="leading" id="GVB-5F-H7R"/>
+                                        <constraint firstItem="KPK-Qs-YzT" firstAttribute="top" secondItem="RIC-JK-3RH" secondAttribute="bottom" constant="-19" id="Uo7-o7-bez"/>
+                                        <constraint firstItem="RIC-JK-3RH" firstAttribute="top" secondItem="IPQ-PR-Iwb" secondAttribute="top" constant="12" id="VFJ-vQ-43I"/>
+                                        <constraint firstItem="RIC-JK-3RH" firstAttribute="leading" secondItem="yIe-5v-Yzy" secondAttribute="trailing" constant="12" id="dtd-6c-e2d"/>
+                                        <constraint firstItem="yIe-5v-Yzy" firstAttribute="centerY" secondItem="IPQ-PR-Iwb" secondAttribute="centerY" id="wmO-C8-4Xv"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dishImage" destination="yIe-5v-Yzy" id="bAa-cW-68b"/>
+                                    <outlet property="dishName" destination="RIC-JK-3RH" id="1hv-bF-K84"/>
+                                    <outlet property="dishTime" destination="KPK-Qs-YzT" id="AMz-Qx-mbx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="xZp-iJ-cha" id="Mw5-CQ-zWk"/>
+                            <outlet property="delegate" destination="xZp-iJ-cha" id="TBj-4y-hxb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Recipes" id="hDz-Gt-zZy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yqp-HS-J4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450.72463768115944" y="35.491071428571423"/>
+        </scene>
+        <!--Ingredients-->
+        <scene sceneID="dzI-JN-yKN">
+            <objects>
+                <viewController storyboardIdentifier="IngredientsViewController" id="ase-an-Ezn" customClass="IngredientsViewController" customModule="HomeWork5_L6_Cooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b4a-KP-lnt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6sY-FC-76r">
+                                <rect key="frame" x="12" y="64" width="390" height="258.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6sY-FC-76r" secondAttribute="height" multiplier="187:124" id="vU4-Sx-4HL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKE-4n-Zw9">
+                                <rect key="frame" x="12" y="342.5" width="390" height="471.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LHZ-LU-o8R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6sY-FC-76r" firstAttribute="top" secondItem="LHZ-LU-o8R" secondAttribute="top" constant="20" id="8yh-Kc-m7X"/>
+                            <constraint firstItem="YKE-4n-Zw9" firstAttribute="top" secondItem="6sY-FC-76r" secondAttribute="bottom" constant="20" id="f2c-sV-4ne"/>
+                            <constraint firstItem="6sY-FC-76r" firstAttribute="centerX" secondItem="b4a-KP-lnt" secondAttribute="centerX" id="izg-Jt-MOa"/>
+                            <constraint firstItem="LHZ-LU-o8R" firstAttribute="bottom" secondItem="YKE-4n-Zw9" secondAttribute="bottom" constant="48" id="kfj-z7-xOV"/>
+                            <constraint firstItem="YKE-4n-Zw9" firstAttribute="leading" secondItem="6sY-FC-76r" secondAttribute="leading" id="moW-ET-KVK"/>
+                            <constraint firstItem="6sY-FC-76r" firstAttribute="leading" secondItem="LHZ-LU-o8R" secondAttribute="leading" constant="12" id="o3n-mC-5KJ"/>
+                            <constraint firstItem="LHZ-LU-o8R" firstAttribute="trailing" secondItem="6sY-FC-76r" secondAttribute="trailing" constant="12" id="oEw-fg-P0u"/>
+                            <constraint firstItem="YKE-4n-Zw9" firstAttribute="trailing" secondItem="6sY-FC-76r" secondAttribute="trailing" id="pti-WV-Uwt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ingredients" id="Xgh-oC-UQy"/>
+                    <connections>
+                        <outlet property="dishImageFinal" destination="6sY-FC-76r" id="Rx4-Vp-0Bi"/>
+                        <outlet property="ingredientsText" destination="YKE-4n-Zw9" id="kmp-e7-dVV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpL-Js-8EV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1123.1884057971015" y="37.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dtq-Xq-TsB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z89-VN-5SB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vtw-hT-aeO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xZp-iJ-cha" kind="relationship" relationship="rootViewController" id="COT-xw-1Zo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4OW-3m-CvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-459.4202898550725" y="35.491071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
